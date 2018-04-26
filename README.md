@@ -1,6 +1,6 @@
 # Characterization of Human Microbiome Composition in Ethnic U.S. Populations
-#### Alyssa N. Cantu and Rohan A. Rastogi
-#### Brown University, Providence RI
+##### Alyssa N. Cantu and Rohan A. Rastogi
+##### Brown University, Providence RI
 
 ## Introduction
 The human microbiome encompasses the genes and genomes of the 100 trillion microbiota that inhabit our bodies (1,2). Microbiome composition varies with host lifestyle, genetics, age, nutrition, medication, and environment (3). Currently, there is a limitation in the scope of human microbiome studies, with the most representation coming from the US, Europe, and other so-called WEIRD countries (i.e. Western, Educated, Industrialized, Rich, and Democratic countries) (4). While this limitation does characterize the NIH Human Microbiome Project (HMP), the database contains data samples from six major U.S. racial/ethnic groups (5). The use of race and ethnicity is important to understand the roles of, and interactions between, genetic and environment factors (6), and will be utilized in this study to investigate variations in microbial composition of individuals belonging to different racial/ethnic groups. As microbial profiles have been discovered to characterize certain diseases (7), understanding the population-level composition of the human microbiome in different ethnic groups can reveal disease-susceptibility of that population, demonstrating clinical importance (8).
@@ -29,9 +29,9 @@ If successful, these results will have broader implications in understanding the
 12. Nguyen N-P, Warnow T, Pop M, White B. A perspective on 16S rRNA operational taxonomic unit clustering using sequence similarity. npj Biofilms and Microbiomes. 2016;2(1).
 
 ## Contributions
-#### Midterm Abstract: Alyssa Cantu
-#### Proofreading and Editing of Midterm Abstract: Rohan Rastogi
-#### Presentation Slides: Alyssa Cantu & Rohan Rastogi
-#### Proofreading and Editing of Presentation Slides: Alyssa Cantu
-#### Data Analysis: Alyssa Cantu & Rohan Rastogi
-#### Final Project write-up: Alyssa Cantu & Rohan Rastogi
+###### Midterm Abstract: Alyssa Cantu
+###### Proofreading and Editing of Midterm Abstract: Rohan Rastogi
+###### Presentation Slides: Alyssa Cantu & Rohan Rastogi
+###### Proofreading and Editing of Presentation Slides: Alyssa Cantu
+###### Data Analysis: Alyssa Cantu & Rohan Rastogi
+###### Final Project write-up: Alyssa Cantu & Rohan Rastogi
