@@ -1,9 +1,13 @@
-# Characterization of Human Microbiome Composition in Ethnic U.S. Populations
-##### Alyssa N. Cantu and Rohan A. Rastogi
-##### Brown University, Providence RI
+# microbiome-profiler
+This repository contains the scripts necessary to characterize human gut microbiome compositions based on selection criteria by using the Bio.jl package and BLAST+ software package.  
 
-## Introduction
-The human microbiome encompasses the genes and genomes of the 100 trillion microbiota that inhabit our bodies (1,2). Microbiome composition varies with host lifestyle, genetics, age, nutrition, medication, and environment (3). Currently, there is a limitation in the scope of human microbiome studies, with the most representation coming from the US, Europe, and other so-called WEIRD countries (i.e. Western, Educated, Industrialized, Rich, and Democratic countries) (4). While this limitation does characterize the NIH Human Microbiome Project (HMP), the database contains data samples from six major U.S. racial/ethnic groups (5). The use of race and ethnicity is important to understand the roles of, and interactions between, genetic and environment factors (6), and will be utilized in this study to investigate variations in microbial composition of individuals belonging to different racial/ethnic groups. As microbial profiles have been discovered to characterize certain diseases (7), understanding the population-level composition of the human microbiome in different ethnic groups can reveal disease-susceptibility of that population, demonstrating clinical importance (8).
+## Getting Started
+### Setting up Bio.jl 
+```{Julia}
+Pkg.add("Bio")
+```
+### Installing BLAST+
+BLAST+ software can be used to run BLAST sequence alignment searches locally. The instructions to download BLAST+ can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279671/).
 
 ## Methods
 Sample data acquired from the HMP database using the [HMP Portal API](https://github.com/jmatsumura/ihmp_portal_api) (9). From such data variation in microbial composition will be determined using UniFrac, an algorithm that measures similarity between microbial communities using phylogenetic information (10,11). To identify bacterial species-level operational taxonomic units (OTUs) (12), the [Random Forests Algorithm](https://github.com/bicycle1885/RandomForests.jl) will be used. For verification, will also be generated using the [mothur software packages](https://mothur.org/wiki/Main_Page).
