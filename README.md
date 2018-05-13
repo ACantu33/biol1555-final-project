@@ -5,16 +5,16 @@ This repository contains the scripts necessary to characterize human gut microbi
 ### Generation of Data Sets
 Data sets were generated from the [Human Microbiome Project Data Portal](https://portal.hmpdacc.org/) using the following selection criteria:
 1. Body Site
-  - feces
+   - feces
 2. Format
-  - FASTQ
+   - FASTQ
 3. Type
-  - 16s_raw_seq_set
+   - 16s_raw_seq_set
 4. Subject Race
-  - african_american
-  - asian
-  - caucasian
-  - hispanic_or_latino
+   - african_american
+   - asian
+   - caucasian
+   - hispanic_or_latino
 
 ### Setting up Bio.jl 
 ```{Julia}
