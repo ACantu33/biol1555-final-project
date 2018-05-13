@@ -23,7 +23,7 @@ Pkg.add("Bio")
 ### Installing BLAST+
 BLAST+ software can be used to run BLAST sequence alignment searches locally. The instructions to download BLAST+ can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279671/).
 
-#### Downloading BLAST database
+##### Downloading BLAST database
 As our data type is 16S raw sequence data, we used the 16SMicrobial data set. The data set can be downloaded [here] (ftp://ftp.ncbi.nlm.nih.gov/blast/db/). 
 
 ## Methods
