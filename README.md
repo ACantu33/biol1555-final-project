@@ -24,7 +24,7 @@ Pkg.add("Bio")
 BLAST+ software can be used to run BLAST sequence alignment searches locally. The instructions to download BLAST+ can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279671/).
 
 ##### Downloading BLAST database
-As our data type is 16S raw sequence data, we used the 16SMicrobial data set. The data set can be downloaded [here] (ftp://ftp.ncbi.nlm.nih.gov/blast/db/). 
+As our data type is 16S raw sequence data, we used the 16SMicrobial data set. Information on how to download BLAST+ data sets can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK52637/) in the **Test BLAST database** subsection.
 
 ## Methods
 Sample data acquired from the HMP database using the [HMP Portal API](https://github.com/jmatsumura/ihmp_portal_api) (9). From such data variation in microbial composition will be determined using UniFrac, an algorithm that measures similarity between microbial communities using phylogenetic information (10,11). To identify bacterial species-level operational taxonomic units (OTUs) (12), the [Random Forests Algorithm](https://github.com/bicycle1885/RandomForests.jl) will be used. For verification, will also be generated using the [mothur software packages](https://mothur.org/wiki/Main_Page).
