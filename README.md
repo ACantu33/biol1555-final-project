@@ -2,12 +2,29 @@
 This repository contains the scripts necessary to characterize human gut microbiome compositions based on selection criteria by using the Bio.jl package and BLAST+ software package.  
 
 ## Getting Started
+### Generation of Data Sets
+Data sets were generated from the [Human Microbiome Project Data Portal](https://portal.hmpdacc.org/) using the following selection criteria:
+1. Body Site
+-feces
+2. Format
+-FASTQ
+3. Type
+-16s_raw_seq_set
+4. Subject Race
+-african_american
+-asian
+-caucasian
+-hispanic_or_latino
+
 ### Setting up Bio.jl 
 ```{Julia}
 Pkg.add("Bio")
 ```
 ### Installing BLAST+
 BLAST+ software can be used to run BLAST sequence alignment searches locally. The instructions to download BLAST+ can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279671/).
+
+#### Downloading BLAST database
+As our data type is 16S raw sequence data, we used the 16SMicrobial data set. The data set can be downloaded [here] (ftp://ftp.ncbi.nlm.nih.gov/blast/db/). 
 
 ## Methods
 Sample data acquired from the HMP database using the [HMP Portal API](https://github.com/jmatsumura/ihmp_portal_api) (9). From such data variation in microbial composition will be determined using UniFrac, an algorithm that measures similarity between microbial communities using phylogenetic information (10,11). To identify bacterial species-level operational taxonomic units (OTUs) (12), the [Random Forests Algorithm](https://github.com/bicycle1885/RandomForests.jl) will be used. For verification, will also be generated using the [mothur software packages](https://mothur.org/wiki/Main_Page).
