@@ -8,7 +8,7 @@ blast_query = open("query_sequence.txt", "w")
 
 blast_results = open("blast_results.txt", "w")
 
-sequences = open("C:/Users/Alyssa/biol1555/asg/fasta_output.txt", "r")
+sequences = open("C:/Users/MyName/Desktop/fasta_output.txt", "r")
 
 query_array = []
 
@@ -31,7 +31,7 @@ for line in readlines(sequences)
     end
     write(blast_query, "$query_sequence")
     close(blast_query)
-    profile = blastn("C:\\Users\\Alyssa\\biol1555\\asg\\query_sequence.txt", "C:\\Users\\Alyssa\\Desktop\\blastdb\\16SMicrobial", db=true, ["-perc_identity", 98])
+    profile = blastn("C:\\Users\\MyName\\Desktop\\query_sequence.txt", "C:\\Users\\MyName\\Desktop\\blastdb\\16SMicrobial", db=true, ["-perc_identity", 98])
     write(blast_results, "$profile")
     query_array = []
     query_sequence = ""
