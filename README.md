@@ -31,7 +31,7 @@ As our data type is 16S raw sequence data, we used the 16SMicrobial data set. In
 ```{Julia}
 Pkg.clone("https://github.com/plotly/Plotly.jl")
 ```
-Create an Plotly user account following the instructions [here](https://plot.ly/julia/getting-started/#authentication).
+Create a Plotly user account following the instructions [here](https://plot.ly/julia/getting-started/#authentication).
 
 ## Parsing of FASTQ Files
 Using **fastq_parser.jl**, specify the directory path that contains all of the FASTQ files. 
