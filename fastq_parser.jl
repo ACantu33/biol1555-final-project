@@ -5,7 +5,7 @@
 
 fasta_file = open("fasta_output.txt", "w")
 
-init_path = "add/path/here"
+init_path = "C:/Users/MyName/Desktop/hmp_fastq_files/"
 
 fastq_files = readdir("$init_path")
 
