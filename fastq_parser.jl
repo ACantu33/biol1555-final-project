@@ -5,7 +5,7 @@
 
 fasta_file = open("fasta_output.txt", "w")
 
-init_path = "C:/Users/Alyssa/Desktop/hmp_latinx_files_all/"
+init_path = "add/path/here"
 
 fastq_files = readdir("$init_path")
 
