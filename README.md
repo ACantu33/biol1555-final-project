@@ -68,4 +68,9 @@ Ensure the parameters passed into the **blastn()** method are to your specificat
 ```{Julia}
 profile = blastn("C:\\Users\\MyName\\Desktop\\query_sequence.txt", "C:\\Users\\MyName\\Desktop\\blastdb\\16SMicrobial", db=true, ["-perc_identity", 98])
 ```
-In this case, we've added a parameter that returns results of a percent identity of 98% or higher. Additional options that can be used in your BLAST search can be found [here](https://biojulia.net/Bio.jl/stable/man/tools/#BLAST-wrapper-1). 
+In this case, we've added a parameter that returns results of a percent identity of 98% or higher. Additional options that can be used in your BLAST search can be found [here](https://biojulia.net/Bio.jl/stable/man/tools/#BLAST-wrapper-1).
+
+Run **microbiome_blast.jl**.
+```{Julia}
+julia microbiome_blast.jl
+```
