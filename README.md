@@ -1,5 +1,5 @@
 # microbiome-profiler
-This repository contains the scripts necessary to characterize human gut microbiome compositions based on selection criteria by using the Bio.jl package and BLAST+ software package.  
+This repository contains the scripts necessary to characterize human gut microbiome compositions based on selection criteria by using the Bio.jl package, BLAST+ software package, and using the Plotly.jl package.   
 
 ## Getting Started
 ### Generation of Data Sets
@@ -15,6 +15,18 @@ Data sets were generated from the [Human Microbiome Project Data Portal](https:/
    - asian
    - caucasian
    - hispanic_or_latino
+To download large data sets, following this tutorial [here](https://www.youtube.com/watch?v=hbSUBr8yWNY). The **[hmp_client]**(https://github.com/ihmpdcc/hmp_client) can be used to download the specified data files in the manifest file.
+#### Limitations
+The **hmp_client** has limited options for retrieving data files listed in the manifest file. If the options specified [here](https://github.com/ihmpdcc/hmp_client) do not work for you, **get_files.py** can be run to download the necessary data files by parsing the manifest file.
+##### Example
+Specify the path to the folder containing your manifest file(s).
+```{Python}
+directory = 'C:\Users\MyName\Desktop\hmp_data'
+```
+Run **get_files.py**.
+```{Python}
+python get_files.py
+```
 
 ### Setting up Bio.jl 
 ```{Julia}
