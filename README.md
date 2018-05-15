@@ -27,20 +27,11 @@ BLAST+ software can be used to run BLAST sequence alignment searches locally. Th
 ##### Downloading BLAST database
 As our data type is 16S raw sequence data, we used the 16SMicrobial data set. Information on how to download BLAST+ data sets can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK52637/) in the **Test BLAST database** subsection.
 
-### Setting up DataStructures.jl
+### Setting up Plotly.jl
 ```{Julia}
-Pkg.add("DataStructures")
+Pkg.clone("https://github.com/plotly/Plotly.jl")
 ```
-
-### Setting up Plots.jl
-```{Julia}
-Pkg.add("Plots")
-```
-
-### Setting up PyPlot
-```{Julia}
-Pkg.add("PyPlot")
-```
+Create a Plotly user account following the instructions [here](https://plot.ly/julia/getting-started/#authentication).
 
 ## Parsing of FASTQ Files
 Using **fastq_parser.jl**, specify the directory path that contains all of the FASTQ files. 
