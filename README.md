@@ -85,10 +85,10 @@ Run the following Julia script:
 ```{Julia}
 julia extraction_visulaization.jl
 ```
-This script reads in a Text File containing the BLAST results for a given population, parses a specific set of data, restructures it, and sends requests to the Plotly API to visualize the restructured data.
+This script reads in a text file containing the BLAST results for a given population, parses a specific set of data, restructures it, and sends requests to the Plotly API to visualize the restructured data.
 
 The script performs 5 main functions:
-1) For a given population (data stored in the Text File), determine the microbial species present within each sample.
+1) For a given population (data stored in the text file), determine the microbial species present within each sample.
 ```{Julia}
 species_sample = clean(extract(open(data_file)))
 ```
@@ -96,7 +96,7 @@ species_sample = clean(extract(open(data_file)))
 ```{Julia}
 genus_FC_sample = count(genusify(species_sample))
 ```
-3) For this population, request the Plotly API to produce and store a bar chart displaying this frequency count distribution.
+3) For this population, request the Plotly API to produce and store a bar graph displaying this frequency count distribution.
 ```{Julia}
 createBar(genus_FC, bargraph_name)
 ```
@@ -111,6 +111,6 @@ prominent_genera_pairs = determineOutliers(genus_FC_sample, "Prominent Genera:")
 ```{Julia}
 createPie(genus_breakdown, population_name * " " * prominent_genus_name * " Composition")
 ```
-All plots (bie charts and pie charts) are publicly viewable at [Plotly](https://plot.ly/organize/home).
+All plots (bar graphs and pie charts) are publicly viewable at [Plotly](https://plot.ly/organize/home).
 Username: 'rohan_rastogi'
 Password: 'rohan_rastogi'
