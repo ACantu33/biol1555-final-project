@@ -45,6 +45,7 @@ As our data type is 16S raw sequence data, we used the 16SMicrobial data set. In
 Pkg.clone("https://github.com/plotly/Plotly.jl")
 ```
 Create a Plotly user account following the instructions [here](https://plot.ly/julia/getting-started/#authentication).
+Generate and save the username, password, and API key associated with the Plotly user account. 
 
 ## Parsing of FASTQ Files
 Using **fastq_parser.jl**, specify the directory path that contains all of the FASTQ files. 
@@ -78,3 +79,20 @@ In this case, we've added a parameter that returns results of a percent identity
 ```{Julia}
 julia microbiome_blast.jl
 ```
+
+### Data Extraction & Visualization
+Run the following Julia script:
+---{Julia}
+julia extraction_vsiualization.jl
+---
+This script reads in a Text File containing the BLAST results for a given population, parses a specific set of data, restructures it, and sends requests to the Plotly API to visualize the restructured data.
+
+The script performs 5 main functions:
+1) For a given population (data stored in the Text File), determine the microbial species present within each sample.
+2) For this population, produce a dictionary representing the frequency count distribution of all microbial genera present.
+3) For this population, request the Plotly API to produce and store a bar chart displaying this frequency count distribution.
+4) For this population, determine the species-level percentage composition of the three most prominent microbial genera present.
+5) For this poulation, request the Plotly API to produce and store pie charts diplaying each genera's species-level composition.
+
+
+
