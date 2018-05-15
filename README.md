@@ -19,7 +19,7 @@ Data sets were generated from the [Human Microbiome Project Data Portal](https:/
 To download large data sets, follow this tutorial [here](https://www.youtube.com/watch?v=hbSUBr8yWNY). The [hmp_client](https://github.com/ihmpdcc/hmp_client) can be used to download the specified data files in the manifest file.
 #### Limitations
 The **hmp_client** has limited options for retrieving data files listed in the manifest file. If the options specified [here](https://github.com/ihmpdcc/hmp_client) do not work for you, **get_files.py** can be run to download the necessary data files by parsing the manifest file.
-##### Example
+#### Example
 Specify the path to the folder containing your manifest file(s).
 ```{Python}
 directory = 'C:\Users\MyName\Desktop\hmp_data'
