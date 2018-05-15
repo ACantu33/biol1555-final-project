@@ -1,5 +1,5 @@
 # microbiome-profiler
-This repository contains the scripts necessary to characterize human gut microbiome compositions based on selection criteria by using the Bio.jl package, BLAST+ software package, and using the Plotly.jl package.   
+This repository contains the scripts necessary to characterize human gut microbiome compositions based on selection criteria by using the Bio.jl package, BLAST+ software package, and the Plotly.jl package.   
 
 ## Getting Started
 ### Generation of Data Sets
