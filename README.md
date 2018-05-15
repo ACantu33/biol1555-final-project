@@ -89,10 +89,26 @@ This script reads in a Text File containing the BLAST results for a given popula
 
 The script performs 5 main functions:
 1) For a given population (data stored in the Text File), determine the microbial species present within each sample.
+```{Julia}
+species_sample = clean(extract(open(data_file)))
+```
 2) For this population, produce a dictionary representing the frequency count distribution of all microbial genera present.
+```{Julia}
+genus_FC_sample = count(genusify(species_sample))
+```
 3) For this population, request the Plotly API to produce and store a bar chart displaying this frequency count distribution.
+```{Julia}
+createBar(genus_FC, bargraph_name)
+```
 4) For this population, determine the species-level percentage composition of the three most prominent microbial genera present.
+```{Julia}
+prominent_genera_pairs = determineOutliers(genus_FC_sample, "Prominent Genera:")
+    for prominent_genus_pair in prominent_genera_pairs
+        determineComposition(population_name, prominent_genus_pair, species_sample)
+    end
+```
 5) For this poulation, request the Plotly API to produce and store pie charts diplaying each genera's species-level composition.
-
-
+```{Julia}
+createPie(genus_breakdown, population_name * " " * prominent_genus_name * " Composition")
+```
 
