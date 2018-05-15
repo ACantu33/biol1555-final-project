@@ -82,9 +82,9 @@ julia microbiome_blast.jl
 
 ### Data Extraction & Visualization
 Run the following Julia script:
----{Julia}
-julia extraction_vsiualization.jl
----
+```{Julia}
+julia extraction_visulaization.jl
+```
 This script reads in a Text File containing the BLAST results for a given population, parses a specific set of data, restructures it, and sends requests to the Plotly API to visualize the restructured data.
 
 The script performs 5 main functions:
